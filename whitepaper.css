@@ -1,0 +1,389 @@
+/* ============================================
+   WHITEPAPER STYLES
+   Oroborian Medical Technology
+   ============================================ */
+
+/* ---- NAVIGATION ---- */
+.wp-nav {
+    position: fixed;
+    top: 36px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 12px 30px;
+    background: rgba(5, 5, 5, 0.9);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(184, 184, 184, 0.08);
+}
+
+.wp-nav-back {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--gold-dark);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.wp-nav-back:hover {
+    color: var(--gold);
+}
+
+/* ---- HERO ---- */
+.wp-hero {
+    position: relative;
+    z-index: 1;
+    padding: 160px 20px 80px;
+    text-align: center;
+    background: radial-gradient(ellipse at center, rgba(184, 184, 184, 0.02) 0%, transparent 70%);
+}
+
+.wp-hero-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.wp-doc-label {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--gold-dark);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.wp-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(20px, 4vw, 36px);
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--gold);
+    line-height: 1.4;
+    margin-bottom: 30px;
+    text-shadow: 0 0 40px rgba(184, 184, 184, 0.15);
+}
+
+.wp-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--white-dim);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* ---- BOOK REFERENCE BADGE ---- */
+.wp-reference-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(184, 184, 184, 0.05);
+    border: 1px solid rgba(184, 184, 184, 0.2);
+    padding: 16px 28px;
+    margin-top: 10px;
+}
+
+.wp-ref-icon {
+    font-size: 24px;
+    color: var(--gold);
+    line-height: 1;
+}
+
+.wp-ref-text {
+    text-align: left;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    color: var(--white);
+    line-height: 1.6;
+}
+
+.wp-ref-text em {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.wp-ref-sub {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--white-dim);
+    text-transform: uppercase;
+}
+
+/* ---- BODY ---- */
+.wp-body {
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px 100px;
+}
+
+.wp-body-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ---- PARTS ---- */
+.wp-part {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.wp-part-label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    color: var(--gold-dark);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.wp-section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(18px, 3vw, 26px);
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+/* ---- BLOCKS ---- */
+.wp-block {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(184, 184, 184, 0.06);
+}
+
+.wp-block:last-child {
+    border-bottom: none;
+}
+
+.wp-heading {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.wp-block p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.wp-block p strong {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+/* ---- TABLES ---- */
+.wp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.wp-table thead th {
+    text-align: left;
+    padding: 12px 16px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold-dark);
+    font-weight: 600;
+}
+
+.wp-table tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(184, 184, 184, 0.06);
+    color: var(--white-dim);
+    font-weight: 300;
+    line-height: 1.7;
+    vertical-align: top;
+}
+
+.wp-table tbody td:first-child {
+    color: var(--white);
+    font-weight: 400;
+    min-width: 160px;
+}
+
+.wp-table tbody tr:hover {
+    background: rgba(184, 184, 184, 0.02);
+}
+
+/* ---- COMBO LIST ---- */
+.wp-combo-list {
+    list-style: none;
+    margin-top: 16px;
+    padding: 0;
+}
+
+.wp-combo-list li {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--white);
+    padding: 8px 0 8px 20px;
+    border-left: 2px solid rgba(184, 184, 184, 0.2);
+    margin-bottom: 4px;
+}
+
+/* ---- REFERENCE SECTION ---- */
+.wp-reference-section {
+    margin-top: 80px;
+    border: 1px solid rgba(184, 184, 184, 0.2);
+    background: rgba(184, 184, 184, 0.02);
+}
+
+.wp-ref-header {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--gold);
+    padding: 16px 30px;
+    border-bottom: 1px solid rgba(184, 184, 184, 0.15);
+    text-transform: uppercase;
+}
+
+.wp-ref-body {
+    padding: 30px;
+}
+
+.wp-ref-body p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--white-dim);
+    margin-bottom: 20px;
+}
+
+.wp-book-citation {
+    background: var(--black-deep);
+    border-left: 3px solid var(--gold);
+    padding: 24px 28px;
+    margin: 24px 0;
+}
+
+.wp-book-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gold-light);
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+
+.wp-book-subtitle {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: var(--gold-dark);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.wp-book-author {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 4px;
+}
+
+.wp-book-year {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--white-dim);
+    letter-spacing: 2px;
+}
+
+.wp-ref-note {
+    font-style: italic;
+    font-size: 13px !important;
+    color: var(--white-dim) !important;
+}
+
+/* ---- LICENSE SECTION ---- */
+.wp-license-section {
+    margin-top: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.wp-license-header {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--white-dim);
+    padding: 14px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    text-transform: uppercase;
+}
+
+.wp-license-body {
+    padding: 30px;
+}
+
+.wp-license-body p {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    line-height: 1.8;
+    color: var(--white-dim);
+    margin-bottom: 14px;
+}
+
+.wp-license-body p strong {
+    color: var(--white);
+    font-size: 13px;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 768px) {
+    .wp-hero {
+        padding: 140px 16px 60px;
+    }
+
+    .wp-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .wp-reference-badge {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wp-ref-text {
+        text-align: center;
+    }
+
+    .wp-table {
+        font-size: 11px;
+    }
+
+    .wp-table thead th,
+    .wp-table tbody td {
+        padding: 10px 8px;
+    }
+
+    .wp-block {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+}
